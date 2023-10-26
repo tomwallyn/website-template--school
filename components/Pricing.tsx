@@ -139,7 +139,7 @@ export function Pricing() {
             href="/contact"
             features={[
               'Augmentation significative de la vitesse de démarrage et des performances globales',
-              'Amélioration de la réactivité de l\'ordinateur pour une expérience utilisateur plus fluide',
+              'Amélioration de la réactivité de l&apos;ordinateur pour une expérience utilisateur plus fluide',
               'Fiabilité accrue et durée de vie prolongée par rapport aux disques durs traditionnels',
             ]}
           />
@@ -163,7 +163,7 @@ export function Pricing() {
             features={[
               'Multi-tâche plus efficace et exécution plus rapide des applications',
               'Capacité accrue pour gérer des logiciels gourmands en mémoire',
-              'Amélioration des performances globales de l\'ordinateur',
+              'Amélioration des performances globales de l&apos;ordinateur',
             ]}
           />
         </div>

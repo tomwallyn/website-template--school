@@ -6,8 +6,8 @@ import backgroundImage from '@/public/images/background-faqs.jpg'
 const faqs = [
   [
     {
-      question: 'Quels types d\'ordinateurs réparez-vous ?',
-      answer: 'Nous réparons une grande variété d\'ordinateurs, y compris les ordinateurs portables, les ordinateurs de bureau, les PC Windows, les Mac, et bien plus encore.'
+      question: 'Quels types d&apos;ordinateurs réparez-vous ?',
+      answer: 'Nous réparons une grande variété d&apos;ordinateurs, y compris les ordinateurs portables, les ordinateurs de bureau, les PC Windows, les Mac, et bien plus encore.'
     },
     {
       question: 'Comment puis-je planifier une réparation ?',
@@ -35,14 +35,14 @@ const faqs = [
   [
     {
       question: 'Quels types de upgrades informatiques proposez-vous ?',
-      answer: 'Nous proposons des upgrades de disque SSD, d\'augmentation de mémoire RAM, et des options combinées pour améliorer les performances de votre ordinateur.'
+      answer: 'Nous proposons des upgrades de disque SSD, d&apos;augmentation de mémoire RAM, et des options combinées pour améliorer les performances de votre ordinateur.'
     },
     {
       question: 'Est-ce que la mise à niveau de RAM rendra mon ordinateur plus rapide ?',
-      answer: 'Oui, l\'augmentation de la mémoire RAM peut accélérer les performances de votre ordinateur, en particulier lorsque vous utilisez des applications gourmandes en mémoire.'
+      answer: 'Oui, l&apos;augmentation de la mémoire RAM peut accélérer les performances de votre ordinateur, en particulier lorsque vous utilisez des applications gourmandes en mémoire.'
     },
     {
-      question: 'Quels sont les avantages de passer d\'un disque dur à un SSD ?',
+      question: 'Quels sont les avantages de passer d&apos;un disque dur à un SSD ?',
       answer: 'Le changement vers un SSD peut entraîner un démarrage plus rapide, une réactivité accrue, et une durée de vie prolongée de votre ordinateur.'
     },
   ],
