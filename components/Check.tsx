@@ -96,22 +96,26 @@ export function Check() {
     const [title, setTitle] = useState<string>("Testez votre éligibilité.");
     const [eligibility, setEligibility] = useState<boolean | null>(null);
     const [selectedBrand, setSelectedBrand] = useState('Dell'); // Par défaut, vous pouvez choisir une marque
+    // @ts-ignore
     const [selectedModel, setSelectedModel] = useState(models.brands.find(brand => brand.name === 'Dell').models[0].references[0]); // Par défaut, vous pouvez choisir un modèle
 
     const brandOptions = models.brands.map(brand => (
         <option key={brand.name} value={brand.name}>{brand.name}</option>
     ));
 
+    // @ts-ignore
     const modelOptions = models.brands.find(brand => brand.name === selectedBrand).models.map(model => (
         model.references.map(reference => (
             <option key={reference} value={reference}>{reference}</option>
         ))
     ));
 
+    // @ts-ignore
     const handleBrandChange = (event) => {
         setSelectedBrand(event.target.value);
     }
 
+    // @ts-ignore
     const handleModelChange = (event) => {
         setSelectedModel(event.target.value);
     }
