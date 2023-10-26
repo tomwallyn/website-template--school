@@ -124,9 +124,7 @@ function Feature({
           isActive ? 'bg-blue-600' : 'bg-slate-500',
         )}
       >
-        <svg aria-hidden="true" className="h-9 w-9" fill="none">
-          <feature.icon />
-        </svg>
+
       </div>
       <h3
         className={clsx(
