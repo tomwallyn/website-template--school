@@ -72,7 +72,7 @@ export function PrimaryFeatures() {
             Mettez à niveau votre expérience informatique.
           </h2>
           <p className="mt-6 text-lg tracking-tight text-blue-100">
-            Chez Computer Rive, nous vous proposons une gamme d&apos;upgrades informatiques pour répondre à tous vos besoins. Donnez un coup de fouet à la performance de votre ordinateur et profitez d'une expérience utilisateur plus fluide. Découvrez nos options d&apos;amélioration :
+            Chez Computer Rive, nous vous proposons une gamme d&apos;upgrades informatiques pour répondre à tous vos besoins. Donnez un coup de fouet à la performance de votre ordinateur et profitez d&apos;une expérience utilisateur plus fluide. Découvrez nos options d&apos;amélioration :
           </p>
         </div>
         <Tab.Group
