@@ -1,0 +1,219 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
+}
+
+body {
+  color: rgb(var(--foreground-rgb));
+  background: linear-gradient(
+      to bottom,
+      transparent,
+      rgb(var(--background-end-rgb))
+    )
+    rgb(var(--background-start-rgb));
+}
+
+@font-face {
+  font-family: BrittanySignature;
+  src: url('/fonts/BrittanySignature.ttf') format("truetype");
+}
+
+@font-face {
+  font-family: HelveticaNeueMediumExtended;
+  src: url('/fonts/HelveticaNeueMediumExtended.ttf') format("truetype");
+}
+
+@font-face {
+  font-family: HelveticaNeueUltraLight;
+  src: url('/fonts/HelveticaNeueUltraLight.ttf') format("truetype");
+}
+
+@font-face {
+  font-family: HelveticaNeueLT35ThinRegular;
+  src: url('/fonts/HelveticaNeueLT35ThinRegular.ttf') format("truetype");
+}
+
+@font-face {
+  font-family: neueHelvetica45Light;
+  src: url('/fonts/neueHelvetica45Light.otf') format("opentype");
+}
+
+@font-face {
+  font-family: ExconBlack;
+  src: url('/fonts/excon/Excon-Black.otf') format("opentype");
+}
+
+@font-face {
+  font-family: ExconBold;
+  src: url('/fonts/excon/Excon-Bold.otf') format("opentype");
+}
+
+@font-face {
+  font-family: ExconLight;
+  src: url('/fonts/excon/Excon-Light.otf') format("opentype");
+}
+
+@font-face {
+  font-family: ExconMedium;
+  src: url('/fonts/excon/Excon-Medium.otf') format("opentype");
+}
+
+@font-face {
+  font-family: ExconRegular;
+  src: url('/fonts/excon/Excon-Regular.otf') format("opentype");
+}
+
+@font-face {
+  font-family: ExconThin;
+  src: url('/fonts/excon/Excon-Thin.otf') format("opentype");
+}
+
+.gradient-circle {
+  background: linear-gradient(
+          to bottom,
+          var(--circle-color-start),
+          var(--circle-color-end)
+  );
+  border-radius: 100%;
+  width: 400px;
+  height: 400px;
+  filter: blur(120px);
+}
+
+.gradient-circle-net {
+  background: linear-gradient(to bottom, #FEC050, #FFF2CC);
+  border-radius: 100%;
+  width: 520px;
+  height: 520px;
+  filter: brightness(0.5) blur(20px);
+}
+
+/*MarqueeText*/
+.demo_marquee-wrap {
+  --demo-marquee_space: 2rem;
+  display: grid;
+  align-content: center;
+  overflow: hidden;
+  gap: var(--demo-marquee_space);
+  width: 100%;
+  font-family: "Corben", system-ui, sans-serif;
+  font-size: 1.5rem;
+}
+
+.marquee {
+  --demo-marquee_duration: 60s;
+  --demo-marquee_gap: var(--demo-marquee_space);
+
+  display: flex;
+  overflow: hidden;
+  user-select: none;
+  gap: var(--demo-marquee_gap);
+}
+
+.marquee__group {
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  gap: var(--demo-marquee_gap);
+  min-width: 100%;
+  animation: scroll var(--demo-marquee_duration) linear infinite;
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translateX(calc(-100% - var(--demo-marquee_gap)));
+  }
+}
+
+/*Divider*/
+hr.solid {
+  border-top: 1px solid rgba(128, 128, 128, 0.2);;
+}
+
+/*Scroll*/
+.dsn-scroll-bottom {
+  position: absolute;
+  right: 20px;
+  bottom: 50px;
+  z-index: 1;
+  width: -webkit-fit-content;
+  width: fit-content;
+  min-width: 13px;
+  font-size: 10px;
+  letter-spacing: 5px;
+  cursor: pointer;
+}
+.dsn-scroll-bottom:before, .dsn-scroll-bottom:after {
+  content: "";
+  display: block;
+  width: 1px;
+  height: 40px;
+  left: 50%;
+  margin-bottom: 10px;
+}
+.dsn-scroll-bottom:before {
+  position: relative;
+  background-color: var(--bg-color);
+}
+.dsn-scroll-bottom:after {
+  position: absolute;
+  top: 0;
+  background-color: var(--theme-color);
+  transform: scale(0);
+  transform-origin: top;
+  animation: scroll-down 2.5s cubic-bezier(0.19, 1, 0.22, 1) infinite;
+}
+.dsn-scroll-bottom .text {
+  writing-mode: vertical-lr;
+}
+
+.trail {
+  position: absolute;
+  top: -1rem;
+  right: 50%;
+  transform: translateX(50%);
+  width: 1px;
+  height: 40px;
+  margin-bottom: 10px;
+  background-color: rgb(var(--foreground-rgb)); /* Remplacez par la couleur du thème souhaitée */
+  opacity: 0;
+  animation-name: trailAnimation;
+  animation-duration: 2.5s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+}
+
+@keyframes trailAnimation {
+  0% {
+    opacity: 0;
+    transform: translateX(50%) scaleY(0);
+  }
+  50% {
+    opacity: 1;
+    transform: translateX(50%) scaleY(1);
+  }
+  100% {
+    opacity: 0;
+    transform: translateX(50%) scaleY(0);
+  }
+}
+
+
