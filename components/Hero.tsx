@@ -13,7 +13,7 @@ export function Hero() {
   return (
     <Container className="pb-16 pt-20 text-center lg:pt-32">
         <h1 className="mx-auto max-w-4xl font-display text-5xl font-medium tracking-tight text-slate-900 sm:text-7xl">
-            Computer Rive donnez une {' '}
+            Computer Revive donnez une {' '}
             <span className="relative whitespace-nowrap text-blue-600">
           <svg
               aria-hidden="true"
@@ -28,7 +28,7 @@ export function Hero() {
             à vos ordinateurs.
         </h1>
       <p className="mx-auto mt-6 max-w-2xl text-lg tracking-tight text-slate-700">
-          Découvrez une approche durable de l&apos;informatique avec Computer Rive. Nous réparons, améliorons et prolongeons la durée de vie de vos ordinateurs, contribuant ainsi à la préservation de la planète et à votre satisfaction.
+          Découvrez une approche durable de l&apos;informatique avec Computer Revive. Nous réparons, améliorons et prolongeons la durée de vie de vos ordinateurs, contribuant ainsi à la préservation de la planète et à votre satisfaction.
       </p>
       <div className="mt-10 flex justify-center gap-x-6">
         <Button href="/#features">En savoir plus</Button>
