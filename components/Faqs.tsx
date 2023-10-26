@@ -72,7 +72,7 @@ export function Faqs() {
             Questions fréquemment posées
           </h2>
           <p className="mt-4 text-lg tracking-tight text-slate-700">
-            Découvrez les réponses aux questions les plus courantes concernant nos services de réparation et d'upgrade informatique. Si vous ne trouvez pas la réponse à votre question, n'hésitez pas à nous contacter pour plus d'informations.
+            Découvrez les réponses aux questions les plus courantes concernant nos services de réparation et d&apos;upgrade informatique. Si vous ne trouvez pas la réponse à votre question, n&apos;hésitez pas à nous contacter pour plus d&apos;informations.
           </p>
         </div>
         <ul
