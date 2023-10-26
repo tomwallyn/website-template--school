@@ -48,6 +48,7 @@ export function Button<
   variant = variant ?? ('solid' as Variant)
   color = color ?? ('slate' as Color)
 
+  // @ts-ignore
   className = clsx(
     baseStyles[variant],
     variantStyles[variant][color],
