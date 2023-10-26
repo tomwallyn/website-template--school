@@ -1,4 +1,4 @@
-import { useId } from 'react'
+import React, { useId } from 'react'
 import Image, { type ImageProps } from 'next/image'
 import { Tab } from '@headlessui/react'
 import clsx from 'clsx'
